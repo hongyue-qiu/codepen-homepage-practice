@@ -10,9 +10,22 @@ const NavBar = () => {
                 <a href={'/'} className={'nav-bar-btn'}><span>GetStart</span></a>
             </div>
             <Router>
-                <NavLink to={'/trending'}>Trending</NavLink>
-                <NavLink to={'/challenge'}>Challenge</NavLink>
-                <NavLink to={'/spark'}>Spark</NavLink>
+                <div className={'nav-items'} >
+                    <NavLink className={'nav-item'} to={'/trending'}>Trending</NavLink>
+                    <NavLink className={'nav-item'} to={'/challenge'}>Challenge</NavLink>
+                    <NavLink className={'nav-item'} to={'/spark'}>Spark</NavLink>
+                </div>
+                <div className={'nav-pro'}>
+                    <NavLink className={'nav-item'} to={'/trending'}>
+                        CodePen
+                        <span className={'nav-item-pro'}>PRO</span>
+                    </NavLink>
+                </div>
+                <div className={'nav-descriptions'}>
+                    <div className={'nav-description-picture'}>picture</div>
+                    <a className={'nav-description-text'} href={'/'}>Your new development career awaits. Check out the latest listings.</a>
+                    <a className={'nav-description-text'} href={'/'}>ads via Carbon</a>
+                </div>
             </Router>
         </nav>
     )
