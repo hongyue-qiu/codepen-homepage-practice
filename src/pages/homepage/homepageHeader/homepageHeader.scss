@@ -6,13 +6,14 @@
   .search-select{
     display: block;
     text-align: left;
-    padding: 12px;
+    padding: 12px 0 0 12px;
     transform: translateY(-10%);
     position: absolute;
     left: calc(188px + 1rem);
-    top: calc(45px + 1rem);
+    top: calc(50px + 1rem);
     background: white;
     border-radius: 2px;
+    //border-top-left-radius: 2px;
     .search-select-btn{
       border: 0;
       color: #717790;
@@ -20,6 +21,7 @@
       font-size: 1rem;
       transition: all .2s linear;
       border-radius: 2px;
+      margin-bottom: 12px;
     }
   }
   &:focus,&:hover .search-select{

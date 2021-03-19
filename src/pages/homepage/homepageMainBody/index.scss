@@ -1,0 +1,9 @@
+.home-page-body{
+  padding: 3rem 2rem;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
