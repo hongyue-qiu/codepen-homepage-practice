@@ -5,6 +5,7 @@ import PaginationContainer from "./paginationContainer/PaginationContainer";
 import HomepageAnonEditor from "./homepageAnonEditor/HomepageAnonEditor";
 import HomepageAnonTopics from "./homepageAnonTopics/HomepageAnonTopics";
 import HomeTeam from "./homeTeam/HomeTeam";
+import './index.scss'
 
 const Homepage = ()=>{
     return (
@@ -15,6 +16,7 @@ const Homepage = ()=>{
             <HomepageAnonEditor />
             <HomepageAnonTopics />
             <HomeTeam />
+            <footer className={'homepage-footer'}>codepen</footer>
         </div>
     )
 }
