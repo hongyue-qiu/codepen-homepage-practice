@@ -12,8 +12,8 @@
     left: calc(188px + 1rem);
     top: calc(50px + 1rem);
     background: white;
-    border-radius: 2px;
-    //border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     .search-select-btn{
       border: 0;
       color: #717790;
@@ -22,6 +22,10 @@
       transition: all .2s linear;
       border-radius: 2px;
       margin-bottom: 12px;
+      cursor: pointer;
+      &:hover{
+        color: white;
+      }
     }
   }
   &:focus,&:hover .search-select{
@@ -39,6 +43,9 @@
       outline: 4px solid rgba(14,190,255,0.4);
       outline-offset: 1px;
     }
+  }
+  .search-focus{
+    border-bottom-left-radius: 0;
   }
 
   .sign-up,.log-in{

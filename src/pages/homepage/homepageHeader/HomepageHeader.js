@@ -13,7 +13,7 @@ const HomepageHeader = ()=>{
     }
     return (
         <div className={'home-page-head'}>
-            <Input className={'search'}
+            <Input className={showSearchSelect?'search search-focus':'search'}
                    onFocus={handleSearchInputFocus}
                    onBlur={handleSearchInputBlur}
                    prefix={<SearchOutlined style={{ fontSize: '20px', color: '#868ca0' }}  />}
