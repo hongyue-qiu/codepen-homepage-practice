@@ -3,6 +3,7 @@ import HomepageHeader from "./homepageHeader/HomepageHeader";
 import HomepageBody from "./homepageMainBody";
 import PaginationContainer from "./paginationContainer/PaginationContainer";
 import HomepageAnonEditor from "./homepageAnonEditor/HomepageAnonEditor";
+import HomepageAnonTopics from "./homepageAnonTopics/HomepageAnonTopics";
 
 const Homepage = ()=>{
     return (
@@ -11,6 +12,7 @@ const Homepage = ()=>{
             <HomepageBody />
             <PaginationContainer/>
             <HomepageAnonEditor/>
+            <HomepageAnonTopics />
         </div>
     )
 }
