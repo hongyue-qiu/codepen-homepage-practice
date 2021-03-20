@@ -1,0 +1,51 @@
+.homepage-anon-editor{
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  background: rgba(74,109,136,.5);
+  .homepage-anon-editor-title{
+    h2{
+      color: white;
+      font-weight: 900;
+    }
+    margin-bottom: 45px;
+  }
+  .homepage-anon-editor-content{
+    max-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+    .homepage-anon-editor-content-tab{
+      text-align: left;
+      p{
+        margin-bottom: .5rem;
+      }
+    }
+    .homepage-anon-editor-content-pic{
+      background-color: #4A6D88;
+      height: 100%;
+    }
+  }
+  .ant-tabs-nav{
+    width: 30%;
+    margin:0;
+    .ant-tabs-tab,.ant-tabs-tab-active{
+      color: #4A6D88;
+      padding: .75rem 1rem;
+      //border-radius: 6px;
+      margin-top:0;
+      width: 100%;
+      //max-height: 145px;
+    }
+  }
+  .ant-tabs-content{
+    height: 100%;
+  }
+}
+.ant-tabs-card.ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-card.ant-tabs-right > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-card.ant-tabs-left > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-card.ant-tabs-right > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+  margin-top: 0;
+}
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  white-space: normal;
+}
+
