@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router,NavLink } from 'react-router-dom'
 import './navBar.scss'
+import Pro from "../Pro/Pro";
 
 const NavBar = () => {
     return (
@@ -18,7 +19,7 @@ const NavBar = () => {
                 <div className={'nav-pro'}>
                     <NavLink className={'nav-item'} to={'/trending'}>
                         CodePen
-                        <span className={'nav-item-pro'}>PRO</span>
+                        <Pro/>
                     </NavLink>
                 </div>
                 <div className={'nav-descriptions'}>
