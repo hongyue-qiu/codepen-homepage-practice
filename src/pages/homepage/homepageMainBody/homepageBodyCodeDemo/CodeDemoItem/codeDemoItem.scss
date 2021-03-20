@@ -1,0 +1,36 @@
+.code-demo-item{
+  position: absolute;
+  width: 300px;
+  height: 140px;
+  background: #010C1E;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+
+  right: 20px;
+  top: -20px;
+  color: white;
+  text-align: left;
+
+  header{
+    display: grid;
+    grid-template-columns: 36px auto 36px;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 9px 0;
+  }
+  .code-demo-content{
+    padding: 0 10px;
+  }
+
+}
+.code-demo-item2{
+  right: -30px;
+  top: 130px;
+}
+.code-demo-item3{
+    right: 40px;
+    top: 280px;
+}
+
