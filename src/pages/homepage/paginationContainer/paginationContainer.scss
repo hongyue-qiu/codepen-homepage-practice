@@ -1,0 +1,33 @@
+.pagination-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 3rem 2rem;
+  .pagination-container-btn{
+    grid-row: 2;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 3rem;
+    background: none;
+    border: 3px solid white;
+    min-width: 40px;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif, sans-serif;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    &:hover{
+      background: white;
+      color: #010C1E;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.pagination-container-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  -ms-flex-align: start;
+  align-items: start;
+  justify-items: center;
+  grid-gap: 4rem 3rem;
+
+  .pagination-container-description{
+    color: white;
+    text-align: left;
+    h2{
+      color: white;
+      font-family: 'Telefon', Sans-Serif, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin: 0 0 10px 0;
+      font-weight: bold;
+    }
+  }
+}

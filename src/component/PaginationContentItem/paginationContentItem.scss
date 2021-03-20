@@ -1,0 +1,108 @@
+.pagination-content-item{
+  flex-direction: column;
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  .pagination-item-pic{
+    opacity: 0.99;
+    position: relative;
+    height: 0;
+    border-radius: 6px;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background: #4A6D88;
+    color: white;
+  }
+  .pagination-item-content{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    .pagination-item-faces{
+      width: 40px;
+      height: 40px;
+      background: #ffffff;
+      margin-right: 0.75rem;
+      overflow: hidden;
+      font: 10px/1 monospace;
+      border-radius: 4px;
+    }
+    .pagination-item-title{
+      font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif, sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+    }
+    .pagination-item-description{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: inherit;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      -webkit-transition: 0.2s ease all;
+      transition: 0.2s ease all;
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 1.2;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+  .pagination-content-item-footer{
+    text-align: left;
+    font-size: 12px;
+
+    .pagination-content-item-footer-btn{
+      display: none;
+      margin-top: .5rem;
+      border: 0;
+      margin-right: 5px;
+      background: rgba(198,205,215,0.9);
+      padding: 0.25rem 0.5rem 0.2rem;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      &:hover{
+        color: #ffcfcb;
+        background-color: white;
+      }
+    }
+  }
+  &:hover{
+    .pagination-content-item-footer-btn{
+      display: inline-block;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -2rem;
+    left: 0;
+    margin: -1rem;
+    border-radius: 10px;
+    height: 320px;
+    overflow: hidden;
+    z-index: -1;
+    background:#D5D9E0;
+    -webkit-clip-path: inset(2rem 0 2rem 2rem round 10px);
+    clip-path: inset(2rem 0 2rem 2rem round 10px);
+    contain: strict;
+    -webkit-transition: -webkit-clip-path 0.3s ease 0.1s;
+    transition: -webkit-clip-path 0.3s ease 0.1s;
+    transition: clip-path 0.3s ease 0.1s;
+    transition: clip-path 0.3s ease 0.1s, -webkit-clip-path 0.3s ease 0.1s;
+  }
+  &:hover:after{
+    -webkit-clip-path: inset(0 0 0 0 round 10px);
+    clip-path: inset(0 0 0 0 round 10px);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+}
